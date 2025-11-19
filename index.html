@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Voices: Language and Power in Scottish Education (1888-1962)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #F2EDD5;
+            color: #3E4031;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 2px solid #BFBCAA;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #3E4031;
+            margin-bottom: 20px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #8C8B79;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            color: #3E4031;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #3E4031;
+            margin-bottom: 30px;
+            border-left: 5px solid #8C8B79;
+            padding-left: 20px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #3E4031;
+            margin: 30px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .chart-container {
+            background-color: #D9D5C1;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            border: 1px solid #BFBCAA;
+        }
+
+        .chart-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .chart-caption {
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #8C8B79;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .quote-box {
+            background-color: #D9D5C1;
+            border-left: 4px solid #3E4031;
+            padding: 25px 30px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #3E4031;
+            border-radius: 4px;
+        }
+
+        .quote-box .source {
+            font-style: normal;
+            font-size: 0.9em;
+            color: #8C8B79;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background-color: #D9D5C1;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #BFBCAA;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #3E4031;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #8C8B79;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .highlight {
+            background-color: #BFBCAA;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .emphasis {
+            color: #3E4031;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 2px solid #BFBCAA;
+            margin-top: 80px;
+            color: #8C8B79;
+            font-size: 0.9em;
+        }
+
+        .key-finding {
+            background-color: #BFBCAA;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .key-finding h4 {
+            color: #3E4031;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Silent Voices: Language and Power in Scottish Education</h1>
+            <p class="subtitle">A Data Story from 1888 to 1962</p>
+            <div class="intro-text">
+                <p>Between 1888 and 1962, thousands of Scottish children sat for their Leaving Certificate examinations. Behind these exam papers lies a story about language, power, and whose voices were heard in the classroom. This webpage explores historical exam records to reveal how English dominated the education system while Gaelic - the indigenous language of Scotland - remained nearly invisible. It also shows how war disrupted learning and how later policy changes attempted to reshape education.</p>
+            </div>
+        </header>
+
+        <section id="introduction">
+            <h2>The Dataset</h2>
+            <p>This analysis draws on a collection of Scottish education documents spanning 74 years, from 1888 to 1962. The dataset includes exam papers, policy circulars, and education regulations - a total of 269 official documents that offer a window into Scotland's educational past.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number">975</span>
+                    <span class="stat-label">Modern European Languages</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">455</span>
+                    <span class="stat-label">Classical Languages</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">235</span>
+                    <span class="stat-label">Indigenous Language (Gaelic)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">4.1x</span>
+                    <span class="stat-label">European Languages vs Gaelic</span>
+                </div>
+            </div>
+
+            <p>Through these documents, we ask two central questions:</p>
+            <ul style="margin-left: 40px; margin-bottom: 20px;">
+                <li>How are different language subjects represented in the exam system, and what does this tell us about linguistic power?</li>
+                <li>How did war and educational policy changes affect the examination system over time?</li>
+            </ul>
+
+            <h3>Understanding the Data</h3>
+            <div style="background-color: #D9D5C1; padding: 25px; border-radius: 8px; margin-top: 30px;">
+                <p style="margin-bottom: 15px;">Throughout this webpage, you'll see charts measuring the "importance" or "frequency" of specific terms in historical documents. Here's what these measurements mean:</p>
+                
+                <div style="margin-bottom: 15px;">
+                    <h4 style="color: #3E4031; margin-bottom: 8px;">TF-IDF (Term Frequency-Inverse Document Frequency)</h4>
+                    <p style="margin-bottom: 8px;">This is a statistical measure that tells us how significant a word is in a particular document or time period. Think of it as a "spotlight" that highlights genuinely important terms while filtering out common words that appear everywhere.</p>
+                    <ul style="margin-left: 25px;">
+                        <li><strong>High TF-IDF score</strong> = This word is both frequent AND distinctive in these documents</li>
+                        <li><strong>Low TF-IDF score</strong> = The word is either rare or too common to be meaningful</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: #3E4031; margin-bottom: 8px;">What the Charts Show</h4>
+                    <p style="margin-bottom: 0;">When you see a spike in a chart, it means that topic or term became much more prominent in that year's education documents. Conversely, a drop or flat line suggests that topic received little attention. By tracking these patterns over 74 years, we can see how priorities, concerns, and power structures shifted over time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages">
+            <h2>Section 1: Languages in the Exam System</h2>
+            
+            <h3>The Language Power Hierarchy</h3>
+            <p>Examining 74 years of language examination records reveals a stark three-tier hierarchy:</p>
+            
+            <div style="margin: 20px 0; padding-left: 20px; border-left: 4px solid #3E4031;">
+                <p><strong>Top Tier - Modern European Languages:</strong> German (340), French (332), English (303) — collectively 975 records</p>
+                <p><strong>Middle Tier - Classical Languages:</strong> Latin (229), Greek (226) — 455 records combined</p>
+                <p><strong>Bottom Tier - Indigenous Language:</strong> Gaelic (all categories) — only 235 records</p>
+            </div>
+            
+            <p>The data reveals a profound imbalance: <span class="emphasis">Modern European languages received more than four times the documentation of Gaelic</span>, Scotland's indigenous tongue. Classical languages, though ancient and foreign, still garnered nearly twice as many records as the native language spoken in the Highlands and Islands for over 1,500 years.</p>
+            
+            <p>This is not a linguistic issue—it is a question of colonial power. Who held the authority to define what languages were "worth learning" in Scotland's own education system?</p>
+
+            <div class="chart-container">
+                <img src="language_hierarchy_chart.png" alt="Language Power Hierarchy Chart">
+                <p class="chart-caption">Language subjects in Scottish Leaving Certificate examinations (1888-1962). Modern European languages dominate with 975 total records (German 340, French 332, English 303), classical languages hold 455 records (Latin 229, Greek 226), while the indigenous language Gaelic has only 235 records—revealing systematic marginalization.</p>
+            </div>
+
+            <div class="key-finding">
+                <h4>What this data suggests</h4>
+                <p>The three-tier hierarchy demonstrates how linguistic power operated in Scottish education. At the top, modern European languages (975 total records) received the lion's share of institutional resources and attention. In the middle, classical languages like Latin and Greek (455 records) maintained their prestige as markers of educated elite status. At the bottom, Gaelic—with only 235 records—was systematically marginalized despite being indigenous to Scotland.</p>
+                
+                <p><strong>The comparison is stark:</strong> A child studying German, French, or English had access to 4.1 times more examination materials than a child learning Gaelic. Even dead languages like Latin received more support than the living indigenous tongue. This reflects not educational necessity, but colonial power structures that privileged external languages while suppressing native ones.</p>
+            </div>
+
+            <h3>The Marginalization of Indigenous Language</h3>
+            <p>Gaelic has been spoken in Scotland for over 1,500 years. Yet in the examination system that determined children's educational futures, it received the least institutional support of all language categories. With only 235 records across 74 years, Gaelic had:</p>
+            
+            <ul style="margin-left: 40px; margin-bottom: 20px;">
+                <li>Less than 1/4 the records of modern European languages (975 records)</li>
+                <li>Roughly half the records of dead classical languages (455 records)</li>
+                <li>Fewer records than German alone (340 records)</li>
+            </ul>
+            
+            <p>This disparity is not accidental. It represents <span class="emphasis">systematic privileging of foreign languages—both modern and ancient—over Scotland's own indigenous tongue</span>. The message to Gaelic-speaking children was clear: your native language has no place in formal education.</p>
+
+            <div class="quote-box">
+                <p>The examination system required English for certification, effectively silencing native Gaelic speakers and limiting children's ability to learn and express themselves in their mother tongue.</p>
+                <span class="source">Historical Education Records Analysis</span>
+            </div>
+
+            <p>For children who grew up speaking Gaelic at home, this created a profound challenge. To succeed in school meant adopting English - the language of power, administration, and opportunity. This linguistic pressure may have constrained children's creativity and cultural expression, forcing them into a narrow model of what counted as legitimate knowledge.</p>
+
+            <h3>The Hierarchy in Context</h3>
+            <p>Why did modern European languages (German, French, English) and classical languages (Latin, Greek) receive so much more support than Gaelic? The answer lies in colonial power structures and class hierarchies.</p>
+            
+            <p><strong>Modern European languages</strong> were languages of empire, commerce, and international diplomacy. They connected Scotland to networks of power across Europe. <strong>Classical languages</strong> served as markers of elite education and social status—studying Latin and Greek signaled membership in the educated upper classes.</p>
+            
+            <p><strong>Gaelic</strong>, by contrast, was associated with rural, working-class communities in the Highlands and Islands—regions historically viewed as "backward" by lowland elites. Rather than celebrating this indigenous language as a national treasure, the education system treated it as an obstacle to "progress" and "modernization."</p>
+        </section>
+
+        <section id="war">
+            <h2>Section 2: War and the Transformation of Education</h2>
+            
+            <h3>The Impact of Conflict on Educational Records</h3>
+            <p>Education does not exist in a vacuum. When we trace the number of education documents produced each year, we see clear evidence of how historical events - particularly war - disrupted the normal functioning of schools and examinations.</p>
+
+            <div class="chart-container">
+                <img src="timeline_chart.png" alt="Document Timeline Chart">
+                <p class="chart-caption">Number of education documents per year (1888-1962). Note the sharp drops during both world wars, with zero records in 1944-1945.</p>
+            </div>
+
+            <div class="key-finding">
+                <h4>What this data suggests</h4>
+                <p>During the years of the Second World War (1939-1945), the number of exam and policy documents falls dramatically. In 1944 and 1945, there are <span class="highlight">no documents at all</span> in our dataset. This absence speaks volumes: when society is consumed by war, normal education systems cannot function as usual.</p>
+            </div>
+
+            <p>This disruption had real consequences for children. Many young people who should have been taking exams during these years had their education interrupted or curtailed entirely. Teachers were called to military service, school buildings were requisitioned, and the focus of national attention shifted from education to survival and warfare.</p>
+
+            <h3>War in Educational Discourse</h3>
+            <p>Beyond the disruption to normal operations, we can track how war itself became a topic of discussion in educational documents. By measuring the frequency of war-related terminology (using the TF-IDF method explained above), we see a striking pattern:</p>
+
+            <div class="chart-container">
+                <img src="war_over_time.png" alt="War Terminology Over Time">
+                <p class="chart-caption">Frequency of war-related terms in education documents (1888-1962). The dramatic spike during WWII (1938-1945) shows how war dominated educational discourse, with TF-IDF scores reaching over 100 in 1940 alone—indicating these terms were both frequent and distinctively important in that period.</p>
+            </div>
+
+            <div class="key-finding">
+                <h4>What this data suggests</h4>
+                <p>The spike in war-related terminology during 1938-1945 reveals that <span class="emphasis">war was not just disrupting education—it was reshaping what education was about</span>. Documents from this period discuss war preparation, civil defense, evacuation of children, and the mobilization of schools for the war effort. Education became militarized.</p>
+            </div>
+
+            <h3>A Silver Lining: Growing Concern for Child Welfare</h3>
+            <p>Paradoxically, the war years also saw an unprecedented surge in attention to children's health and welfare. Analyzing terminology related to health, poverty, milk provision, and special needs reveals a striking pattern:</p>
+
+            <div class="chart-container">
+                <img src="health__poor__children__special__milk_over_time.png" alt="Child Welfare Terminology">
+                <p class="chart-caption">TF-IDF scores for child welfare terms (health, poor, children, special, milk) in education documents (1888-1962). The dramatic peaks in the late 1930s—with "milk" reaching a TF-IDF score over 250 in 1938 and "children" over 230 in 1939—show these terms became both frequent and distinctively important during the war years, reflecting policy priorities around child nutrition and welfare.</p>
+            </div>
+
+            <div class="key-finding">
+                <h4>What this data suggests</h4>
+                <p>The war years witnessed an explosion of concern for children's physical wellbeing. The 1938 peak in "milk" terminology likely reflects the introduction of free milk schemes in schools—a policy response to concerns about child nutrition during wartime rationing. Similarly, increased attention to "special" needs and "health" suggests that <span class="emphasis">war forced society to confront the vulnerabilities of children</span> and take collective responsibility for their welfare.</p>
+                
+                <p>This represents a profound shift: from viewing education purely as academic training to recognizing schools as sites of comprehensive child welfare. The Education Act of 1918, passed in the aftermath of World War I, had already begun this transformation. World War II accelerated it dramatically.</p>
+            </div>
+
+            <h3>The Long Shadow of War</h3>
+            <p>The effects of war extended beyond the immediate conflict years. Even after 1945, it took time for the education system to recover and for examination records to return to pre-war levels. Yet the war also catalyzed lasting changes—particularly in recognizing education's role in supporting not just children's minds, but their bodies and overall wellbeing. The gap in the data represents more than just missing paperwork - it represents <span class="emphasis">lost opportunities for a generation</span>, but also the seeds of a more holistic approach to education.</p>
+        </section>
+
+        <section id="policy">
+            <h2>Section 3: Changing Rules and the Education Act</h2>
+            
+            <h3>A Moment of Reform</h3>
+            <p>In 1918, Scotland passed a major Education Act that changed the rules governing schooling and certification. This legislation came in the aftermath of the First World War, at a moment when society was rethinking many of its institutions. The Act raised the school leaving age, expanded access to secondary education, and reformed the examination system.</p>
+
+            <div class="chart-container">
+                <img src="language_trends_chart.png" alt="Language Trends Over Time">
+                <p class="chart-caption">Language subject trends over time. The 1918 Education Act (marked by vertical line) represents a policy shift, though the dominance of certain languages continues.</p>
+            </div>
+
+            <h3>Language Terminology in Educational Discourse</h3>
+            <p>Beyond counting exam subjects, we can analyze how often the terms "Gaelic," "Scots," and "English" actually appeared in the texts of education documents. This reveals not just what was taught, but what was <span class="emphasis">talked about and prioritized</span> in educational policy discourse:</p>
+
+            <div class="chart-container">
+                <img src="language_over_time.png" alt="Language Terms Frequency">
+                <p class="chart-caption">TF-IDF scores for language-related terminology (Gaelic, Scots, English, language) in education documents (1888-1962). "English" (green line) peaks dramatically around 1910 at a TF-IDF score near 95, while "Gaelic" (blue) rarely exceeds 30 in any year. These scores indicate not just how often these terms appeared, but how distinctively important they were in policy discourse—revealing that English-language policy dominated educational discussions while Gaelic remained consistently marginal.</p>
+            </div>
+
+            <div class="key-finding">
+                <h4>What this data suggests</h4>
+                <p>The dominance of "English" terminology in the 1910-1920 period—reaching peaks of 90+ references—suggests this was a critical moment when language policy was being actively debated and codified. Meanwhile, "Gaelic" maintained a consistently marginal presence in policy discourse throughout the entire 74-year period. <span class="emphasis">The language of the education system itself excluded Gaelic from serious consideration.</span></p>
+                
+                <p>Interestingly, the term "language" (orange) also peaks in the 1910s, suggesting heightened attention to linguistic questions. Yet this attention did not translate into greater recognition for indigenous languages—instead, it often reinforced the primacy of English as the language of education and advancement.</p>
+            </div>
+
+            <h3>Hope and Continuity</h3>
+            <p>The 1918 Education Act represented a small opening for hope - a recognition that education needed to be more accessible and more equitable. In the decades following the Act, we can see some changes in the pattern of subjects taught and examined. There were modest increases in the diversity of subjects, including some attention to vocational and practical skills alongside traditional academic subjects.</p>
+
+            <div class="key-finding">
+                <h4>What this data suggests</h4>
+                <p>However, the fundamental structure of linguistic power remained largely unchanged. English continued its dominance in both examination subjects and policy discourse. Gaelic remained marginal in both domains. The Act improved access to education, but it did not fundamentally challenge whose language, whose culture, and whose knowledge counted as legitimate in the examination system.</p>
+            </div>
+
+            <p>This pattern reminds us that policy reform alone cannot undo deep-seated structures of power. Real change requires not just new laws, but a reimagining of what education is for and whose voices should be heard within it.</p>
+        </section>
+
+        <section id="advanced-analysis">
+            <h2>Advanced Analysis: How Educational Priorities Shifted</h2>
+            
+            <h3>Topic Modeling Before and After 1939</h3>
+            <p>Using advanced text analysis techniques called <strong>Latent Dirichlet Allocation (LDA)</strong>, we can identify the main "topics" or themes in education documents and see how their relative importance changed before and after 1939—a watershed year marking the start of World War II.</p>
+
+            <div style="background-color: #D9D5C1; border-left: 4px solid #8C8B79; padding: 20px; margin: 20px 0; border-radius: 4px;">
+                <h4 style="margin-top: 0; color: #3E4031;"> What is Topic Modeling?</h4>
+                <p style="margin-bottom: 0;"><strong>Topic modeling</strong> is a machine learning method that automatically discovers "themes" in a collection of documents. Instead of counting individual words, it identifies clusters of words that tend to appear together—like how "milk," "health," "children," and "welfare" might cluster into a "Child Welfare" topic. This helps us see the big picture: what were education documents really <em>about</em>, and how did those priorities change over time?</p>
+            </div>
+
+            <div class="chart-container">
+                <img src="topicsprobabilitybeforeandafter_1939.png" alt="Topic Probabilities Before and After 1939">
+                <p class="chart-caption">Average topic probabilities in education documents before 1939 (blue) versus after 1939 (orange). The chart shows six major themes discovered by the algorithm and their shifting importance across the war divide. Higher probability means that topic was more prominent in the documents from that period.</p>
+            </div>
+
+            <div class="key-finding">
+                <h4>What this data suggests</h4>
+                <p>Several striking patterns emerge from this analysis:</p>
+                
+                <ul style="margin-left: 40px; margin-bottom: 20px;">
+                    <li><strong>Rising priority:</strong> "Child Welfare, Special Education, and Regulatory Decisions" increased significantly after 1939, reflecting wartime concerns about vulnerable children and the expansion of welfare provisions.</li>
+                    
+                    <li><strong>Rising priority:</strong> "Instructional Schemes and Pupil Welfare Provision" nearly tripled after 1939 (from ~5% to ~18%), showing the shift toward holistic child welfare we saw in the health/milk data.</li>
+                    
+                    <li><strong>Declining priority:</strong> "Postal Services, Training, and Educational Administration" dropped dramatically after 1939, suggesting that bureaucratic concerns gave way to urgent welfare needs.</li>
+                    
+                    <li><strong>Increasing dominance:</strong> "Scottish Education Governance and Teaching Conditions" became the single most important topic after 1939 (~33%), possibly reflecting wartime challenges in maintaining the teaching workforce.</li>
+                </ul>
+                
+                <p>This analysis confirms our earlier findings: <span class="emphasis">war fundamentally transformed what education was about</span>. The pre-war focus on administrative procedures and teacher training gave way to urgent concerns about child welfare, special needs, and the basic governance of a system under strain. The war made visible—and unavoidable—the connection between children's bodies and their learning.</p>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion: What the Data Tells Us</h2>
+            
+            <p>When we look at 74 years of Scottish examination records, we see more than just numbers and documents. We see a story about language, power, war, welfare, and children's futures.</p>
+
+            <h3>Five Key Findings</h3>
+            
+            <div class="quote-box">
+                <p><strong>1. The Three-Tier Language Hierarchy:</strong> Modern European languages (German, French, English) dominated with 975 records; classical languages (Latin, Greek) held the middle with 455 records; while Gaelic, Scotland's indigenous language, was relegated to the bottom with only 235 records—less than a quarter of the European languages' total.</p>
+            </div>
+
+            <div class="quote-box">
+                <p><strong>2. The Silence of Gaelic:</strong> Despite its deep roots in Scottish culture and history, Gaelic was treated as marginal in the education system, reflecting broader patterns of linguistic suppression.</p>
+            </div>
+
+            <div class="quote-box">
+                <p><strong>3. War's Disruption:</strong> The data reveals stark gaps during wartime, particularly 1944-1945, showing how conflict interrupts the education of entire generations.</p>
+            </div>
+
+            <div class="quote-box">
+                <p><strong>4. War as Transformer:</strong> World War II didn't just disrupt education—it fundamentally reshaped it. The dramatic surge in attention to child health, milk provision, and special needs during 1938-1945 shows how war forced society to recognize education's role in comprehensive child welfare, not just academic training.</p>
+            </div>
+
+            <div class="quote-box">
+                <p><strong>5. The Limits of Reform:</strong> The 1918 Education Act brought some positive changes, but fundamental structures of linguistic power persisted well into the mid-20th century. Policy reform alone cannot dismantle deeply entrenched hierarchies without addressing underlying attitudes about language, culture, and identity.</p>
+            </div>
+
+            <h3>Beyond Test Scores</h3>
+            <p>This analysis demonstrates that examination data can tell us much more than how well students performed on tests. It can reveal <span class="emphasis">whose knowledge counted, whose language mattered, and whose children had the opportunity to succeed</span>. By reading these historical records critically, we can better understand the structures of power that shaped education in the past - and that continue to shape it today.</p>
+
+            <p>The story of Scottish education between 1888 and 1962 is ultimately a story about voices - which ones were heard, which were silenced, and which struggled to be recognized. As we reflect on this history, we might ask: whose voices are being silenced in our current education systems, and what can we do to ensure that all children have the opportunity to learn and express themselves in their own language and culture?</p>
+        </section>
+
+        <footer>
+            <p>Data source: Scottish Education Department Records (1888-1962)</p>
+            <p>This webpage presents a critical analysis of historical exam data to explore questions of language, power, and educational equity.</p>
+        </footer>
+    </div>
+</body>
+</html>
